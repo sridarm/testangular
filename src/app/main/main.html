@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="jumbotron text-center">
+        <div custom-select="t as t.name for t in listDetails | filter: { name: $searchTerm }" ng-model="drivers" custom-select-options="listOptions">
+            <div class="pull-left">
+                <span>{{ t.name }}</span> / <span>{{ t.vehicleNo }}</span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
